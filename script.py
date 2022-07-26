@@ -1,4 +1,3 @@
-
 from scrapli.driver.core import IOSXEDriver
 
 print('Hello Jenkins')
