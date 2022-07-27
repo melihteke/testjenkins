@@ -9,6 +9,6 @@ net_connect = ConnectHandler(
 )
 
 output = net_connect.send_command(
-    "show ip interface brief", use_textfsm=True
+    "show version", use_textfsm=True
 )
 pprint(output)
