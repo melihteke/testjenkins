@@ -1,5 +1,13 @@
-from nike_devices import NikeCiscoDevice
+from netmiko import ConnectHandler
 
-device = NikeCiscoDevice("192.168.178.1", "admin", "!mlh1985")
-device.get_chassis_info()
-print(device.get_chassis_info())
+net_connect = ConnectHandler(
+    device_type="cisco_xe",
+    host="192.168.178.1",
+    username="admin",
+    password="!mlh1985",
+)
+
+output = net_connect.send_command(
+    "show ip arp"
+)
+print(output) 
