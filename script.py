@@ -9,5 +9,7 @@ my_device = {
     "auth_strict_key": False,
 }
 
+'''
 with IOSXEDriver(**my_device) as conn:
     response = conn.send_command("show version")
+'''
