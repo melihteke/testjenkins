@@ -13,7 +13,7 @@ output = net_connect.send_command(
     "show version", use_textfsm=True
 )
 pprint(output)
-data = json.dump(output)
+data = json.dumps(output)
 
 with open("show_version.txt", "+a") as f:
     f.writelines(data)
