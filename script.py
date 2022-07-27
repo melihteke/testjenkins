@@ -14,6 +14,6 @@ output = net_connect.send_command(
 pprint(output)
 
 with open("show_version.txt", "+a") as f:
-    f.writelines(str(output))
+    f.writelines(output)
     f.close()
     
