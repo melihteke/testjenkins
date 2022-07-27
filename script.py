@@ -10,4 +10,4 @@ net_connect = ConnectHandler(
 output = net_connect.send_command(
     "show ip arp"
 )
-print(output) 
+print(output)
