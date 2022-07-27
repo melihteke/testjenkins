@@ -3,9 +3,9 @@ from scrapli.driver.core import IOSXEDriver
 print('Hello Jenkins')
 
 my_device = {
-    "host": "172.18.0.11",
-    "auth_username": "scrapli",
-    "auth_password": "scrapli",
+    "host": "192.168.178.1",
+    "auth_username": "admin",
+    "auth_password": "!mlh1985",
     "auth_strict_key": False,
 }
 
