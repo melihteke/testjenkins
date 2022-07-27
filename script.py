@@ -8,6 +8,6 @@ net_connect = ConnectHandler(
 )
 
 output = net_connect.send_command(
-    "show ip nat translations", use_textfsm=True
+    "show ip interface brief", use_textfsm=True
 )
 print(output)
