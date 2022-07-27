@@ -3,11 +3,11 @@ from netmiko import ConnectHandler
 net_connect = ConnectHandler(
     device_type="cisco_xe",
     host="192.168.178.1",
-    username="admin",
-    password="!mlh1985",
+    username="jenkins",
+    password="jenkins",
 )
 
 output = net_connect.send_command(
-    "show ip arp"
+    "show ip nat translations"
 )
 print(output)
