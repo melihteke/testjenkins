@@ -1,4 +1,5 @@
 from netmiko import ConnectHandler
+from pprint import pprint
 
 net_connect = ConnectHandler(
     device_type="cisco_xe",
@@ -10,4 +11,4 @@ net_connect = ConnectHandler(
 output = net_connect.send_command(
     "show ip interface brief", use_textfsm=True
 )
-print(output)
+pprint(output)
