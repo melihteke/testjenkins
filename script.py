@@ -12,3 +12,8 @@ output = net_connect.send_command(
     "show version", use_textfsm=True
 )
 pprint(output)
+
+with open("show_version.txt", "+a") as f:
+    f.writelines(str(output))
+    f.close()
+    
